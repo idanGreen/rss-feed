@@ -1,0 +1,44 @@
+<rss version="2.0">
+    <channel>
+        <title>xkcd.com</title>
+        <link>https://xkcd.com/</link>
+        <description>xkcd.com: A webcomic of romance and math humor.</description>
+        <language>en</language>
+        <item>
+            <title>Opening Crawl</title>
+            <link>https://xkcd.com/1843/</link>
+            <description>
+                <img src="https://imgs.xkcd.com/comics/opening_crawl.png" title="Using a classic Timothy Zahn EU/Legends novel is bad enough, but at least the style and setting aren't too far off. If you really want to mess with people, try using Splinter of the Mind's Eye." alt="Using a classic Timothy Zahn EU/Legends novel is bad enough, but at least the style and setting aren't too far off. If you really want to mess with people, try using Splinter of the Mind's Eye." />
+            </description>
+            <pubDate>Mon, 29 May 2017 04:00:00 -0000</pubDate>
+            <guid>https://xkcd.com/1843/</guid>
+        </item>
+        <item>
+            <title>Anti-Drone Eagles</title>
+            <link>https://xkcd.com/1842/</link>
+            <description>
+                <img src="https://imgs.xkcd.com/comics/anti_drone_eagles.png" title="It's cool, it's totally ethical--they're all programmed to hunt whichever bird of prey is most numerous at the moment, so they leave the endangered ones alone until near the end." alt="It's cool, it's totally ethical--they're all programmed to hunt whichever bird of prey is most numerous at the moment, so they leave the endangered ones alone until near the end." />
+            </description>
+            <pubDate>Fri, 26 May 2017 04:00:00 -0000</pubDate>
+            <guid>https://xkcd.com/1842/</guid>
+        </item>
+        <item>
+            <title>Who?</title>
+            <link>https://xkcd.com/1841/</link>
+            <description>
+                <img src="https://imgs.xkcd.com/comics/who.png" title="Gonna feel even dumber when I realize that all this time he's been talking into a bluetooth thingy and we're not actually friends." alt="Gonna feel even dumber when I realize that all this time he's been talking into a bluetooth thingy and we're not actually friends." />
+            </description>
+            <pubDate>Wed, 24 May 2017 04:00:00 -0000</pubDate>
+            <guid>https://xkcd.com/1841/</guid>
+        </item>
+        <item>
+            <title>Genetic Testing Results</title>
+            <link>https://xkcd.com/1840/</link>
+            <description>
+                <img src="https://imgs.xkcd.com/comics/genetic_testing_results.png" title="That's very exciting! The bad news is that it's a risk factor for a lot of things." alt="That's very exciting! The bad news is that it's a risk factor for a lot of things." />
+            </description>
+            <pubDate>Mon, 22 May 2017 04:00:00 -0000</pubDate>
+            <guid>https://xkcd.com/1840/</guid>
+        </item>
+    </channel>
+</rss>
