@@ -6,11 +6,18 @@
     border: 3px solid black;
 }
 
+/* this element is placed in order to avoid position:absolute in .rss-feed-inner-container - which in turn causes bugs
+with the carousel library*/
+.rss-feed-upper{
+    visibility: hidden;
+    height: 180px;
+}
+
 .rss-feed-inner-container{
     height: 200px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
     padding: 0 10px 10px 10px;
     box-sizing: border-box;
 }
@@ -22,6 +29,7 @@
     border-radius: 15px;
     padding: 10px;
     box-sizing: border-box;
+    margin-right: 30px;
 }
 
 .rss-feed-item-description{

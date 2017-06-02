@@ -8,6 +8,12 @@
     RssFeedView.prototype.start = function start(){
         var html = this.template(this.model.data);
         this.element.append(html);
+
+        this.element.find(".rss-feed-inner-container").slick({
+            centerMode: true,
+            infinite: true,
+            variableWidth: true
+        });
     };
 
     RssFeedView.prototype.bindModel = function bindModel(modelTobind){

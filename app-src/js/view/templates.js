@@ -11,7 +11,7 @@ templates['rssFeedTemplate'] = template({"1":function(container,depth0,helpers,p
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div class=\"rss-feed-items-container\">\r\n    <div class=\"rss-feed-inner-container\">\r\n"
+  return "<div class=\"rss-feed-items-container\">\r\n    <div class=\"rss-feed-upper\"></div>\r\n    <div class=\"rss-feed-inner-container\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.item : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "    </div>\r\n</div>";
 },"useData":true});
