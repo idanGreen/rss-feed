@@ -1,6 +1,12 @@
 (function(){
     var RssFeedModel = function RssFeedModel(rssJson){
-        this.data = rssJson.channel;
+        this.data = rssJson.rss.channel;
+
+        var items = this.data.item;
+
+        // in case parser read only one item tag, wrap in an array
+        if(!(items instanceof Array))
+            this.data.item = [items];
     };
 
     RssFeedModel.prototype.getTitle = function getTitle(){
@@ -12,13 +18,7 @@
     };
 
     RssFeedModel.prototype.getItems = function getItems(){
-        var items = this.data.item;
-
-        // in case parser read only one item tag, wrap in an array
-        if(!(items instanceof Array))
-            return [items];
-        else
-            return items;
+        return this.data.item;
     };
 
     window.RssFeedModel = RssFeedModel;

@@ -1,12 +1,11 @@
 (function(){
-    var RssFeedCtrl = function RssFeedCtrl(rssFilepath){
-        this.rssFilePath = rssFilepath;
+    var RssFeedCtrl = function RssFeedCtrl(){
         this.rssFileParser = new RssXmlParser();
         this.view = new RssFeedView(this);
     };
 
-    RssFeedCtrl.prototype.start = function start(){
-        this.rssFileParser.parseFromFile(this.rssFilePath, this.startFeedFlow.bind(this))
+    RssFeedCtrl.prototype.start = function start(rssFilepath){
+        this.rssFileParser.parseFromFile(rssFilepath, this.startFeedFlow.bind(this))
     };
 
     RssFeedCtrl.prototype.startFeedFlow = function startFeedFlow(rssFeedJson){

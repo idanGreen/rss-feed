@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Idan's RSS feed</title>
+
+    <!-- third party libraries -->
+    <script src="app-src/js/libs/handlebars.runtime-v4.0.10.js"></script>
+    <script src="app-src/js/libs/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="app-src/css/app.css" />
+
+    <script>
+        $(document).ready(function() {
+            var ctrl = new RssFeedCtrl();
+            ctrl.start("test/data/twoItems.xml");
+        });
+    </script>
+</head>
+<body>
+
+    <!-- rss feed will be rendered here -->
+    <div id="rss-feed-container"></div>
+
+    <!-- utilities -->
+    <script src="app-src/js/utils/RssXmlParser.js"></script>
+
+    <!-- mvc files -->
+    <script src="app-src/js/model/RssFeedModel.js"></script>
+    <script src="app-src/js/view/templates.js"></script> <!-- precompiled templates -->
+    <script src="app-src/js/view/RssFeedView.js"></script>
+    <script src="app-src/js/control/RssFeedCtrl.js"></script>
+
+</body>
+</html>

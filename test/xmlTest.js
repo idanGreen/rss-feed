@@ -1,8 +1,7 @@
 (function XmlTest(){
 
     var fileLocations = {
-        // "test1": "data/singleItem.xml",
-        "test1": "singleItem.xml",
+        "test1": "data/singleItem.xml",
         "test2": "data/twoItems.xml",
         "test3": "data/fourItems.xml",
         "test4": "https://xkcd.com/rss.xml"
