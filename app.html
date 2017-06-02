@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <title>Idan's RSS feed</title>
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- third party css -->
+    <link rel="stylesheet" type="text/css" href="app-src/css/libs/slick.css"/>
 
-    <!-- third party libraries -->
-    <script src="app-src/js/libs/handlebars.runtime-v4.0.10.js"></script>
-    <script src="app-src/js/libs/jquery-3.2.1.min.js"></script>
-
+    <!-- app css -->
     <link rel="stylesheet" href="app-src/css/app.css" />
 
-    <script>
-        $(document).ready(function() {
-            var ctrl = new RssFeedCtrl();
-            ctrl.start("test/data/twoItems.xml");
-        });
-    </script>
 </head>
 <body>
 
     <!-- rss feed will be rendered here -->
     <div id="rss-feed-container"></div>
+
+    <!-- third party libraries -->
+    <script src="app-src/js/libs/handlebars.runtime-v4.0.10.js"></script>
+    <script src="app-src/js/libs/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="app-src/js/libs/slick.min.js"></script>
 
     <!-- utilities -->
     <script src="app-src/js/utils/RssXmlParser.js"></script>
@@ -33,7 +30,12 @@
     <script src="app-src/js/view/RssFeedView.js"></script>
     <script src="app-src/js/control/RssFeedCtrl.js"></script>
 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var ctrl = new RssFeedCtrl();
+            ctrl.start("test/data/twoItems.xml");
+        });
+    </script>
 
 </body>
 </html>

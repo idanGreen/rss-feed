@@ -12,7 +12,10 @@
         this.element.find(".rss-feed-inner-container").slick({
             centerMode: true,
             infinite: true,
-            variableWidth: true
+            variableWidth: true,
+            appendArrows: $(".carousel-arrows"),
+            prevArrow: "<button type='button' class='slick-prev'></button>",
+            nextArrow: "<button type='button' class='slick-next'></button>"
         });
     };
 
