@@ -13,6 +13,9 @@
 </head>
 <body>
 
+    <!-- registration page will be rendered here -->
+    <div id="registration-container"></div>
+
     <!-- rss feed will be rendered here -->
     <div id="rss-feed-container"></div>
 
@@ -22,13 +25,15 @@
     <script type="text/javascript" src="app-src/js/libs/slick.min.js"></script>
 
     <!-- utilities -->
-    <script src="app-src/js/utils/RssXmlParser.js"></script>
+    <script src="app-src/js/utils/rssXmlParser.js"></script>
 
     <!-- mvc files -->
-    <script src="app-src/js/model/RssFeedModel.js"></script>
+    <script src="app-src/js/model/rssFeedModel.js"></script>
     <script src="app-src/js/view/templates.js"></script> <!-- precompiled templates -->
-    <script src="app-src/js/view/RssFeedView.js"></script>
-    <script src="app-src/js/control/RssFeedCtrl.js"></script>
+    <script src="app-src/js/view/baseView.js"></script>
+    <script src="app-src/js/view/registrationView.js"></script>
+    <script src="app-src/js/view/rssFeedView.js"></script>
+    <script src="app-src/js/control/rssFeedCtrl.js"></script>
 
     <script>
         $(document).ready(function() {

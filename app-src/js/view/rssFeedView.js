@@ -1,14 +1,15 @@
 (function($){
     var RssFeedView = function RssFeedView(parentCtrl){
-        this.parent = parentCtrl;
-        this.element = $("#rss-feed-container");
-        this.template = Handlebars.templates["rssFeedTemplate"];
+        View.call(this, {
+            parent: parentCtrl,
+            element: $("#rss-feed-container"),
+            templateId: "rssFeedTemplate"
+        });
     };
 
-    RssFeedView.prototype.start = function start(){
-        var html = this.template(this.model.data);
-        this.element.append(html);
+    RssFeedView.prototype = Object.create(View.prototype);
 
+    RssFeedView.prototype.afterRender = function afterRender(){
         this.element.find(".rss-feed-inner-container").slick({
             centerMode: true,
             infinite: true,
@@ -17,10 +18,6 @@
             prevArrow: "<button type='button' class='slick-prev'></button>",
             nextArrow: "<button type='button' class='slick-next'></button>"
         });
-    };
-
-    RssFeedView.prototype.bindModel = function bindModel(modelTobind){
-        this.model = modelTobind;
     };
 
     window.RssFeedView = RssFeedView;
