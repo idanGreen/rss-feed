@@ -12,7 +12,7 @@
     RssFeedView.prototype.afterRender = function afterRender(){
         this.element.find(".rss-feed-inner-container").slick({
             centerMode: true,
-            infinite: true,
+            infinite: false,
             variableWidth: true,
             appendArrows: $(".carousel-arrows"),
             prevArrow: "<button type='button' class='slick-prev'></button>",

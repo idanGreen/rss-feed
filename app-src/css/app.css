@@ -78,3 +78,7 @@ with the carousel library*/
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.slick-disabled{
+    opacity: 0.3;
+}
