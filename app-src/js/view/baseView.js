@@ -31,6 +31,10 @@
         this.model = modelTobind;
     };
 
+    View.prototype.stop = function stop(){
+        this.element.empty();
+    };
+
     window.View = View;
 
 })(jQuery);

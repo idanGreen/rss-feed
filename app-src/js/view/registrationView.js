@@ -14,7 +14,11 @@
 
         // handle submit button click event
         this.element.find("#submit-button").click(function(e){
-            view.parent.onSubmit($("#rss-filepath").val());
+            var filepath = $("#rss-filepath").val();
+            if(filepath && filepath.length > 0 && filepath.indexOf(".xml", filepath.length -".xml".length) !== -1)
+                view.parent.onSubmit(filepath);
+            else
+                alert("Invliad input - please enter an xml address");
         });
     };
 
