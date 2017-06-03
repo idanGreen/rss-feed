@@ -33,12 +33,14 @@
     <script src="app-src/js/view/baseView.js"></script>
     <script src="app-src/js/view/registrationView.js"></script>
     <script src="app-src/js/view/rssFeedView.js"></script>
+    <script src="app-src/js/control/regCtrl.js"></script>
     <script src="app-src/js/control/rssFeedCtrl.js"></script>
+    <script src="app-src/js/control/appCtrl.js"></script>
 
     <script>
         $(document).ready(function() {
-            var ctrl = new RssFeedCtrl();
-            ctrl.start("test/data/twoItems.xml");
+            var ctrl = new AppCtrl();
+            ctrl.start();
         });
     </script>
 

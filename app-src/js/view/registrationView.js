@@ -1,7 +1,7 @@
 (function($){
     var RegistrationView = function RegistrationView(parentCtrl){
         View.call(this, {
-            parent: parentCtrl,
+            parentCtrl: parentCtrl,
             element: $("#registration-container"),
             templateId: "registrationTemplate"
         });
@@ -13,8 +13,8 @@
         var view = this;
 
         // handle submit button click event
-        this.element.find("submitButton").click(function(e){
-            view.parent.onSubmit(this.val());
+        this.element.find("#submit-button").click(function(e){
+            view.parent.onSubmit($("#rss-filepath").val());
         });
     };
 

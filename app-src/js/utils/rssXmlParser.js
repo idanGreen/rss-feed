@@ -78,6 +78,9 @@
             buffer[nodeName] = newBuffer;
     };
 
+    /*
+     * get file using Fetch API
+     */
     var createFetch = function createFetch(filepath, callback){
         var myHeaders = new Headers();
         var init = {
@@ -100,6 +103,9 @@
         });
     };
 
+    /*
+     * get file using XHR
+     */
     var createXHR = function createXHR(filepath, callback){
         // create an ajax request
         var xhr = new XMLHttpRequest();

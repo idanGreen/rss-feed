@@ -1,7 +1,7 @@
 (function($){
     var RssFeedView = function RssFeedView(parentCtrl){
         View.call(this, {
-            parent: parentCtrl,
+            parentCtrl: parentCtrl,
             element: $("#rss-feed-container"),
             templateId: "rssFeedTemplate"
         });

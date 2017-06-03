@@ -1,5 +1,8 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['registrationTemplate'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"registration-container\">\r\n    <label for=\"rss-filepath\" id=\"\">Enter an rss feed address</label>\r\n    <input type=\"text\" id=\"rss-filepath\" name=\"rss-filepath\" />\r\n    <button type=\"button\" id=\"submit-button\">Start feed</button>\r\n</div>";
+},"useData":true});
 templates['rssFeedTemplate'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function";
 

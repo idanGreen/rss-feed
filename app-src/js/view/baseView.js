@@ -27,7 +27,7 @@
      */
     View.prototype.afterRender = function afterRender(){};
 
-    RssFeedView.prototype.bindModel = function bindModel(modelTobind){
+    View.prototype.bindModel = function bindModel(modelTobind){
         this.model = modelTobind;
     };
 

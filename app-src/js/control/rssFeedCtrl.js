@@ -1,5 +1,6 @@
 (function(){
-    var RssFeedCtrl = function RssFeedCtrl(){
+    var RssFeedCtrl = function RssFeedCtrl(parentCtrl){
+        this.parent = parentCtrl;
         this.rssFileParser = new RssXmlParser();
         this.view = new RssFeedView(this);
     };
