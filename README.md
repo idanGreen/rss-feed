@@ -7,7 +7,7 @@ Just open app.html in any browser with allow-cross-origin configuration
 # File Structure
 - app.html: application page
 - README.md: this file
--> app-src/
+-- app-src/
     -> css/
         -> libs/
             - slick.css: carousel widget css
